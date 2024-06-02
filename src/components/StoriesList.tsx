@@ -15,12 +15,12 @@ const StoriesList: React.FC<{
         "
         >
           <Image
-            width={1000}
-            height={1000}
+            width={250}
+            height={250}
             src={story.profilePic}
             alt={story.title}
             onClick={() => onSelect(story.id)}
-            className="min-w-16 p-1 border-solid border-red-400 border-[1px]  object-cover cursor-pointer rounded-full"
+            className="min-w-16 p-1 w-16 border-solid border-red-400 border-[1px]  object-cover cursor-pointer rounded-full"
           />
           <p className=" font-light text-sm">{story.name}</p>
         </div>
