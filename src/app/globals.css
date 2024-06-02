@@ -10,24 +10,37 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  @apply bg-gray-900 text-white;
+}
+
+.stories-list {
+  @apply flex overflow-x-scroll space-x-4 p-4;
+}
+
+.story-viewer {
+  @apply relative flex justify-center items-center h-screen bg-black;
+}
+
+.navigation {
+  @apply absolute inset-0 flex justify-between items-center;
+}
+
+.prev,
+.next {
+  @apply w-1/2 h-full cursor-pointer;
 }
