@@ -9,7 +9,7 @@ export const storiesMock = [
   {
     id: 2,
     name: "Jane",
-    profilePic: "https://xsgames.co/randomusers/assets/avatars/female/44.jpg ",
+    profilePic: "https://xsgames.co/randomusers/assets/avatars/female/44.jpg",
     imageUrl: "https://picsum.photos/300/300",
     title: "Story 2",
   },
